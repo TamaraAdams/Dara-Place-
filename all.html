@@ -508,14 +508,7 @@
       localStorage.setItem("cart", JSON.stringify(cart));
       alert(name + " has been added to your cart.");
     }
-    document.addEventListener("DOMContentLoaded", () => {
-      const orderBtn = document.getElementById('order-btn');
-      orderBtn.addEventListener('click', () => {
-      const cart = JSON.parse(localStorage.getItem('cart')) || [];
-        if (cart.length === 0) {
-          alert('Your cart is empty!');
-          return;
-        }
+    
         const orderDetails = cart.map(item => `item.name - ₦{item.price.toFixed(2)}`).join(', ');
         const message = `Hello Daraé place, I will like to place an order`;
         const phone = "2349035128112";
