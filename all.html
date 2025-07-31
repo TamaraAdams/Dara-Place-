@@ -242,7 +242,11 @@
       <div class="product">
         <img src="1.jpg" alt="Platform" onclick="toggleZoom(this)">
         <div class="product-name"> <h3>Merladesigns Unisex Green Shirt</h3></div>
-        
+        <a href="https://wa.me/2349035128112?text=Hello%20Daraé%20Place,%20I%20will%20like%20to%20place%20an%20order" 
+     target="_blank" 
+     class="order-button">
+    Order Now
+        </a>
      <button id="order-btn">Order</button>
       </div>
 
@@ -513,10 +517,8 @@
         const message = `Hello Daraé place, I will like to place an order`;
         const phone = "2349035128112";
         const encodedMsg = encodeURIComponent(message);
-        window.location.href = `https://wa.me/2349035128112?text=${encodedMsg}`;
-      });
-    });
-     function toggleZoom(img) {
+        https://wa.me/2349035128112?text=${encodedMsg}`;
+      });function toggleZoom(img) {
       const modal = document.getElementById('zoom-modal');
       const zoomImg = document.getElementById('zoomed-image');
       zoomImg.jpg= img.jpg;
