@@ -114,6 +114,30 @@
       max-width: 90%;
       max-height: 90%;
       border-radius: 8px;
+
+      body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #fff8f0;
+    }
+
+    .order-button {
+      padding: 15px 30px;
+      background-color: #25D366;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 18px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .order-button:hover {
+      background-color: #1ebe5d;
+    }
     }
   </style>
 </head>
@@ -148,7 +172,11 @@
         <img src="1.jpg" alt="Platform" onclick="toggleZoom(this)">
         <div class="product-name"> <h3>Merladesigns Unisex Green Shirt</h3></div>
         
-     <button id="order-btn">Order</button>
+             <a href="https://wa.me/2349035128112?text=Hello%20Daraé%20Place,%20I%20will%20like%20to%20place%20an%20order" 
+     target="_blank" 
+     class="order-button">
+    Order Now
+             </a>
       </div>
 
       <div class="product">
